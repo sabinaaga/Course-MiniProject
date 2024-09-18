@@ -16,8 +16,8 @@ GroupController groupController=new GroupController();
 
 while (true)
 {
-    Options: Menu();
-        string optionStr = Console.ReadLine();
+    Menu();
+    Options: string optionStr = Console.ReadLine();
     bool isCorrectFormatOptions = int.TryParse(optionStr, out int option);
     if (isCorrectFormatOptions)
     {
@@ -25,23 +25,17 @@ while (true)
         {
             case (int)Options.CreateGroup:
                 groupController.Create();
-                Console.WriteLine("Create metod is working");
                 break;
             case (int)Options.GetAllGroup:
-                Console.WriteLine("GetAll metod is working");
-
+                groupController.GetAll();
                 break;
             case (int)Options.DeleteGroup:
-                Console.WriteLine("Delate metod is working");
-
                 break;
             case (int)Options.GetByIdGroup:
-                Console.WriteLine("GetById metod is working");
-
+                groupController.GetById();
                 break;
             default:
                 ConsoleColor.Red.WriteConsole("Pleace select 1,2,3 or 4");
-                break;
                 goto Options;
         }
 

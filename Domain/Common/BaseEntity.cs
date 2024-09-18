@@ -10,5 +10,8 @@ namespace Domain.Common
     {
         public int Id { get; set; }
         public DateTime CreatDate { get; set; } = DateTime.Now;
+
+        
+
     }
 }

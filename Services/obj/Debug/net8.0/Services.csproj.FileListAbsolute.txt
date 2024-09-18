@@ -15,3 +15,4 @@ C:\Users\Farid\Desktop\VS\Course\Services\obj\Debug\net8.0\Services.dll
 C:\Users\Farid\Desktop\VS\Course\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\Farid\Desktop\VS\Course\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\Farid\Desktop\VS\Course\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Farid\Desktop\VS\Course\Services\obj\Debug\net8.0\Services.sourcelink.json

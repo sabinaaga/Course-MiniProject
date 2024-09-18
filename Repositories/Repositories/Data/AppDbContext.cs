@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace Repositories.Repositories.Data
 {
-    public class AppDbContext<T>
+    public static class AppDbContext<T>
     {
         public static List<T> datas;
 
-        public AppDbContext()
+        static AppDbContext()
         {
             datas = new List<T>();
         }
 
-        public List<T> GetAll()
-        {
-            return datas;
-
-        }
+        
+        
     }
 }

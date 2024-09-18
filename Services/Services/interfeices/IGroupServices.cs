@@ -12,5 +12,7 @@ namespace Services.Services.interfeices
         public List<Group> GetAll();
         public void Create(Group group);
 
+        public Group GetById(int id);
+
     }
 }

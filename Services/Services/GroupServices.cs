@@ -14,6 +14,9 @@ namespace Services.Services
     {
         private readonly IGroupRepositories groupRepositories;
 
+
+       
+
         public GroupServices()
         {
             groupRepositories = new GroupRepositories();
@@ -26,6 +29,11 @@ namespace Services.Services
         public List<Group> GetAll()
         {
             return groupRepositories.GetAll();
+        }
+
+        public Group GetById(int id)
+        {
+           return groupRepositories.GetById(id);
         }
     }
 }
