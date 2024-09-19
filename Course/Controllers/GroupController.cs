@@ -1,5 +1,6 @@
 ﻿using Course.Helpers.Extensions;
 using Domain.Entityes;
+using Repositories.Helpers.Constants;
 using Services.Services;
 using Services.Services.interfeices;
 using System;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Course.Controllers
 {
@@ -35,7 +37,7 @@ namespace Course.Controllers
                     if (!string.IsNullOrWhiteSpace(teacher))
                     {
                         groupServices.Create(new Group { Name = strname, Room = room, Teacher = teacher });
-                        ConsoleColor.Green.WriteConsole("Group created ");
+                        ConsoleColor.Green.WriteConsole(ValidationMessage.CreateSuccess);
 
                     }
                     else
@@ -65,10 +67,16 @@ namespace Course.Controllers
 
         public void GetAll()
         {
+            var groups= groupServices.GetAll();
+            if(groups.Count == 0)
+            {
+                ConsoleColor.Yellow.WriteConsole("Data not added, pleace add data");
+
+            }
             var res= groupServices.GetAll();
             foreach (var group in res)
             {
-                string text=$"Id: {group.Id}, Room: {group.Room}, Teacher: {group.Teacher}";
+                string text=$"Id: {group.Id}, Room: {group.Room}, Teacher: {group.Teacher}, CreatDate: {group.CreatDate}";
                 ConsoleColor.Cyan.WriteConsole(text);
             }
         }
@@ -89,7 +97,7 @@ namespace Course.Controllers
                 }
                 catch (Exception ex)
                 {
-                    ConsoleColor.Red.WriteConsole("Add group Id again, because Id not found ");
+                    ConsoleColor.Red.WriteConsole("Not found");
                     goto GroupId;
 
 
@@ -104,5 +112,37 @@ namespace Course.Controllers
         }
 
 
+        public void Delete()
+        {
+            ConsoleColor.Cyan.WriteConsole("Add group Id");
+        GroupId: string groupstr = Console.ReadLine();
+            bool isCorrectFormat = int.TryParse(groupstr, out int group);
+            if (isCorrectFormat)
+            {
+                try
+                {
+                    groupServices.Delete(group);
+                    ConsoleColor.Cyan.WriteConsole("Add Id again");
+                }
+                catch (Exception ex)
+                {
+                    ConsoleColor.Red.WriteConsole("Not found");
+                    goto GroupId;
+
+
+                }
+
+            }
+            else
+            {
+                ConsoleColor.Red.WriteConsole("Add group Id again ");
+                goto GroupId;
+            }
+        }
+
     }
+
+    
+
 }
+

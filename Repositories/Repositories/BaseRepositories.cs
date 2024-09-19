@@ -1,5 +1,6 @@
 ﻿using Domain.Common;
 using Repositories.Exceptions;
+using Repositories.Helpers.Constants;
 using Repositories.Repositories.Data;
 using Repositories.Repositories.Interfeices;
 using System;
@@ -24,7 +25,9 @@ namespace Repositories.Repositories
 
         public void Delate(T data)
         {
+
             AppDbContext<T>.datas.Remove(data);
+
         }
 
         public List<T> GetAll()
@@ -34,8 +37,14 @@ namespace Repositories.Repositories
 
         public T GetById(int id)
         {
-            return AppDbContext<T>.datas.FirstOrDefault(x => x.Id == id) ?? throw new NotFoundexceptions("Id not found");
+            return AppDbContext<T>.datas.FirstOrDefault(x => x.Id == id) ?? throw new NotFoundexceptions(ExceptionMessages.NotFound);
 
+        }
+
+
+        public List<T> Search(string text)
+        {
+            return AppDbContext<T>.datas;
         }
     }
 }

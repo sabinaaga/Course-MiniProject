@@ -13,6 +13,9 @@ namespace Services.Services.interfeices
         public void Create(Group group);
 
         public Group GetById(int id);
+            public void Delete(int id);
+
+        public List<Group> SearchByName(string text);
 
     }
 }

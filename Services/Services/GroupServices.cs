@@ -26,6 +26,13 @@ namespace Services.Services
             groupRepositories.Create(group);
         }
 
+        public void Delete(int id)
+        {
+            Group group = groupRepositories.GetById(id);
+
+            groupRepositories.Delate(group);
+        }
+
         public List<Group> GetAll()
         {
             return groupRepositories.GetAll();
@@ -34,6 +41,12 @@ namespace Services.Services
         public Group GetById(int id)
         {
            return groupRepositories.GetById(id);
+        }
+
+        public List<Group> SearchByName(string text)
+        {
+            //var datas= groupRepositories.Search(text);
+            return groupRepositories.Search(text).Where(m=>m.Name.Contains(text)).ToList();
         }
     }
 }

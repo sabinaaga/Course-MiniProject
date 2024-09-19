@@ -30,6 +30,7 @@ while (true)
                 groupController.GetAll();
                 break;
             case (int)Options.DeleteGroup:
+                groupController.Delete();
                 break;
             case (int)Options.GetByIdGroup:
                 groupController.GetById();
