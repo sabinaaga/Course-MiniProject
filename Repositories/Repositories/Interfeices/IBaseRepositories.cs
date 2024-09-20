@@ -16,6 +16,10 @@ namespace Repositories.Repositories.Interfeices
         public void Delate(T data);
         public T GetById(int id);
         public List<T> Search(string text);
+        public List<T> GetAllGroup(string text);
+
+        public void Update(T data);
+
 
 
     }

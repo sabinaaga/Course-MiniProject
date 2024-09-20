@@ -17,5 +17,12 @@ namespace Services.Services.interfeices
 
         public List<Group> SearchByName(string text);
 
+        public List<Group> GetAllGroupByTeacherName(string name);
+        public List<Group> GetAllGroupByRoom(string room);
+
+        public void Update(Group group);
+
+
+
     }
 }

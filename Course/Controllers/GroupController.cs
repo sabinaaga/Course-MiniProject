@@ -23,7 +23,7 @@ namespace Course.Controllers
 
         public void Create()
         {
-         ConsoleColor.Red.WriteConsole("Add group name ");
+         ConsoleColor.Cyan.WriteConsole("Add group name ");
         AddName: string strname = Console.ReadLine();
             if (!string.IsNullOrWhiteSpace(strname))
             {
@@ -140,7 +140,110 @@ namespace Course.Controllers
             }
         }
 
+        public void SearchByName()
+        {
+            ConsoleColor.Cyan.WriteConsole("Pleace add group name");
+        GroupName: string groupname = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(groupname))
+            {
+                try
+                {
+                    var result = groupServices.SearchByName(groupname);
+                    foreach (var item in result)
+                    {
+                        string text = $"Id: {item.Id}, Name: {item.Name}, Room: {item.Room}, Teacher: {item.Teacher}";
+                        ConsoleColor.Cyan.WriteConsole(text);
+
+                    }
+                    
+
+                }
+                catch (Exception es)
+                {
+
+                    Console.WriteLine(es.Message);
+                }
+            }
+            else
+            {
+                ConsoleColor.Red.WriteConsole("Pleace add group name");
+                goto GroupName;
+
+            }
+            
+        }
+        
+
+
+        public void GetAllGroupByRoom()
+        {
+            ConsoleColor.Cyan.WriteConsole("Pleace add room");
+        Room: string room = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(room))
+            {
+                try
+                {
+                    var result = groupServices.GetAllGroupByRoom(room);
+                    foreach (var item in result)
+                    {
+                        string text = $"Id: {item.Id}, Name: {item.Name}, Room: {item.Room}, Teacher: {item.Teacher}";
+                        ConsoleColor.Cyan.WriteConsole(text);
+
+                    }
+
+
+                }
+                catch (Exception es)
+                {
+
+                    Console.WriteLine(es.Message);
+                }
+            }
+            else
+            {
+                ConsoleColor.Red.WriteConsole("Pleace add room");
+                goto Room;
+
+            }
+
+        }
+
+
+        public void GetAllGroupByTeacherName()
+        {
+            ConsoleColor.Cyan.WriteConsole("Pleace add teacher name");
+        TeacherName: string teacherName = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(teacherName))
+            {
+                try
+                {
+                    var groups = groupServices.GetAllGroupByTeacherName(teacherName);
+                    foreach (var item in groups)
+                    {
+                        string text = $"Id: {item.Id}, Name: {item.Name}, Room: {item.Room}, Teacher: {item.Teacher}";
+                        ConsoleColor.Cyan.WriteConsole(text);
+
+                    }
+
+
+                }
+                catch (Exception es)
+                {
+
+                    Console.WriteLine(es.Message);
+                }
+            }
+            else
+            {
+                ConsoleColor.Red.WriteConsole("Pleace add teacher name");
+                goto TeacherName;
+
+            }
+
+        }
+
     }
+    
 
     
 

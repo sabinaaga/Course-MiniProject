@@ -46,5 +46,18 @@ namespace Repositories.Repositories
         {
             return AppDbContext<T>.datas;
         }
+
+        public List<T> GetAllGroup(string text)
+        {
+
+        return AppDbContext<T>.datas; 
+        }
+
+        public void Update(T data)
+        {
+            var resalt=AppDbContext<T>.datas;
+
+        }
     }
+    
 }
