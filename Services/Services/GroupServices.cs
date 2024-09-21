@@ -44,7 +44,7 @@ namespace Services.Services
 
         public List<Group> GetAllGroupByTeacherName(string name)
         {
-            return groupRepositories.GetAllGroup(name).Where(m => m.Name.Contains(name)).ToList() ?? throw new NotFoundexceptions(ExceptionMessages.NotFound);
+            return groupRepositories.GetAllGroup(name).Where(m => m.Teacher.Contains(name)).ToList() ?? throw new NotFoundexceptions(ExceptionMessages.NotFound);
         }
         public Group GetById(int id)
         {

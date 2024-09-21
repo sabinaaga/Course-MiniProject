@@ -1,4 +1,6 @@
 ﻿using Domain.Entityes;
+using Repositories.Exceptions;
+using Repositories.Helpers.Constants;
 using Repositories.Repositories;
 using Repositories.Repositories.Interfeices;
 using Services.Services.interfeices;
@@ -21,12 +23,15 @@ namespace Services.Services
 
         public void Create(Student student)
         {
-            throw new NotImplementedException();
+            studentRepositories.Create(student);
+
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+
+            Student student = studentRepositories.GetById(id);
+            studentRepositories.Delate(student);
         }
 
         public List<Student> GetAll()
@@ -46,12 +51,15 @@ namespace Services.Services
 
         public Student GetById(int id)
         {
-            throw new NotImplementedException();
+            return studentRepositories.GetById(id);
         }
+
 
         public List<Student> SearchByNameOrSurname(string text)
         {
-            throw new NotImplementedException();
+            {
+                return studentRepositories.Search(text.ToLower()).Where(m => m.Name.ToLower().Contains(text) || m.Surname.ToLower().Contains(text)).ToList() ?? throw new NotFoundexceptions(ExceptionMessages.NotFound);
+            }
         }
 
         public void Update(Student student)

@@ -12,8 +12,13 @@ namespace Course.Helpers.Enums
         GetAllGroup,
         DeleteGroup,
         GetByIdGroup,
+        SearchByName,
         GetByNameGroup,
         GetAllGroupByTeacherName,
-        GetAllGroupByRoom
+        GetAllGroupByRoom,
+        CreateStudent,
+        GetAllStudent,
+        GetStudentsById,
+        DeleteStudent
     }
 }
