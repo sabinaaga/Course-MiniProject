@@ -34,7 +34,7 @@ namespace Course.Controllers
 
                     ConsoleColor.Cyan.WriteConsole("Add group teacher name ");
                 teacher: string teacher = Console.ReadLine();
-                    if (!string.IsNullOrWhiteSpace(teacher))
+                    if (!string.IsNullOrWhiteSpace(teacher) && !teacher.Any(char.IsDigit))
                     {
                         groupServices.Create(new Group { Name = strname, Room = room, Teacher = teacher });
                         ConsoleColor.Green.WriteConsole(ValidationMessage.CreateSuccess);

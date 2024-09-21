@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Farid\\Desktop\\VS\\Course\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "Course\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Course\\Controllers\\GroupController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACQAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T17:48:53.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IStudentServices.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\interfeices\\IStudentServices.cs",
               "RelativeDocumentMoniker": "Services\\Services\\interfeices\\IStudentServices.cs",
@@ -50,12 +67,11 @@
               "RelativeToolTip": "Services\\Services\\interfeices\\IStudentServices.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:31:47.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T15:31:47.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudentServices.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\StudentServices.cs",
               "RelativeDocumentMoniker": "Services\\Services\\StudentServices.cs",
@@ -63,12 +79,11 @@
               "RelativeToolTip": "Services\\Services\\StudentServices.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAAC8AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T14:59:18.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T14:59:18.003Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BaseRepositories.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Repositories\\Repositories\\BaseRepositories.cs",
               "RelativeDocumentMoniker": "Repositories\\Repositories\\BaseRepositories.cs",
@@ -80,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Course\\Controllers\\StudentController.cs",
@@ -88,12 +103,11 @@
               "RelativeToolTip": "Course\\Controllers\\StudentController.cs",
               "ViewState": "AQIAAPIAAAAAAAAAAAAAAP4AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:48:11.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T09:48:11.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GroupServices.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\GroupServices.cs",
               "RelativeDocumentMoniker": "Services\\Services\\GroupServices.cs",
@@ -105,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Options.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Helpers\\Enums\\Options.cs",
               "RelativeDocumentMoniker": "Course\\Helpers\\Enums\\Options.cs",
@@ -113,18 +127,17 @@
               "RelativeToolTip": "Course\\Helpers\\Enums\\Options.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T14:31:56.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T14:31:56.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Program.cs",
               "RelativeDocumentMoniker": "Course\\Program.cs",
               "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Program.cs",
               "RelativeToolTip": "Course\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAEYAAAAWAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAB8AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T19:06:28.578Z",
               "EditorCaption": ""
