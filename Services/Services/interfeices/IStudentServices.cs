@@ -17,8 +17,8 @@ namespace Services.Services.interfeices
 
         public List<Student> SearchByNameOrSurname(string text);
 
-        public List<Group> GetAllStudentByAge(string name);
-        public List<Group> GetAllStudentByGroupId(string room);
+        public List<Student> GetAllStudentByAge(int age);
+        public List<Student> GetAllStudentByGroupId(int id);
 
         public void Update(Student student);
     }

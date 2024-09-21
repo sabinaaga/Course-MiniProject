@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Farid\\Desktop\\VS\\Course\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|c:\\users\\farid\\desktop\\vs\\course\\services\\services\\interfeices\\igroupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|solutionrelative:services\\services\\interfeices\\igroupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|c:\\users\\farid\\desktop\\vs\\course\\services\\services\\studentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|solutionrelative:services\\services\\studentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|c:\\users\\farid\\desktop\\vs\\course\\services\\services\\interfeices\\istudentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|solutionrelative:services\\services\\interfeices\\istudentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A241F08-0BE5-4C0D-BB4A-D2B89E09D068}|Repositories\\Repositories.csproj|c:\\users\\farid\\desktop\\vs\\course\\repositories\\repositories\\baserepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A241F08-0BE5-4C0D-BB4A-D2B89E09D068}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories\\baserepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8BD5C4-DB78-40AE-B807-EBAFE6218457}|Domain\\Domain.csproj|c:\\users\\farid\\desktop\\vs\\course\\domain\\entityes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8BD5C4-DB78-40AE-B807-EBAFE6218457}|Domain\\Domain.csproj|solutionrelative:domain\\entityes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE30111D-2478-4329-A59C-05C6E3D9A358}|Services\\Services.csproj|c:\\users\\farid\\desktop\\vs\\course\\services\\services\\groupservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{0A241F08-0BE5-4C0D-BB4A-D2B89E09D068}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories\\grouprepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A241F08-0BE5-4C0D-BB4A-D2B89E09D068}|Repositories\\Repositories.csproj|c:\\users\\farid\\desktop\\vs\\course\\repositories\\repositories\\baserepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A241F08-0BE5-4C0D-BB4A-D2B89E09D068}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories\\baserepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|solutionrelative:course\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E45996CE-46E9-4780-A692-452E1F66E46B}|Course\\Course.csproj|c:\\users\\farid\\desktop\\vs\\course\\course\\helpers\\enums\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,8 +50,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Domain\\Entityes\\Student.cs",
+              "RelativeDocumentMoniker": "Domain\\Entityes\\Student.cs",
+              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Domain\\Entityes\\Student.cs",
+              "RelativeToolTip": "Domain\\Entityes\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T15:33:26.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStudentServices.cs",
+              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\interfeices\\IStudentServices.cs",
+              "RelativeDocumentMoniker": "Services\\Services\\interfeices\\IStudentServices.cs",
+              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\interfeices\\IStudentServices.cs",
+              "RelativeToolTip": "Services\\Services\\interfeices\\IStudentServices.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T15:31:47.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentServices.cs",
+              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\StudentServices.cs",
+              "RelativeDocumentMoniker": "Services\\Services\\StudentServices.cs",
+              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\StudentServices.cs",
+              "RelativeToolTip": "Services\\Services\\StudentServices.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T14:59:18.003Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -52,37 +99,53 @@
               "RelativeDocumentMoniker": "Repositories\\Repositories\\BaseRepositories.cs",
               "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Repositories\\Repositories\\BaseRepositories.cs",
               "RelativeToolTip": "Repositories\\Repositories\\BaseRepositories.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAD0AAAAEAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T10:42:49.381Z"
+              "WhenOpened": "2024-09-21T10:42:49.381Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GroupController.cs",
-              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\GroupController.cs",
-              "RelativeDocumentMoniker": "Course\\Controllers\\GroupController.cs",
-              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\GroupController.cs",
-              "RelativeToolTip": "Course\\Controllers\\GroupController.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T10:07:10.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Course\\Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Course\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAKoAAAAAAAAAAAAAALEAAACcAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAADcAAADAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:48:11.354Z"
+              "WhenOpened": "2024-09-21T09:48:11.354Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "GroupServices.cs",
+              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\GroupServices.cs",
+              "RelativeDocumentMoniker": "Services\\Services\\GroupServices.cs",
+              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\GroupServices.cs",
+              "RelativeToolTip": "Services\\Services\\GroupServices.cs",
+              "ViewState": "AQIAACIAAAAAZ2ZmZmYGwC4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T09:30:16.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "Course\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Course\\Controllers\\GroupController.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAADwv9AAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T10:07:10.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "GroupRepositories.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Repositories\\Repositories\\GroupRepositories.cs",
               "RelativeDocumentMoniker": "Repositories\\Repositories\\GroupRepositories.cs",
@@ -90,56 +153,34 @@
               "RelativeToolTip": "Repositories\\Repositories\\GroupRepositories.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:44:31.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GroupServices.cs",
-              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\GroupServices.cs",
-              "RelativeDocumentMoniker": "Services\\Services\\GroupServices.cs",
-              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\GroupServices.cs",
-              "RelativeToolTip": "Services\\Services\\GroupServices.cs",
-              "ViewState": "AQIAACIAAAAAZ2ZmZmYGwDEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:30:16.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IGroupServices.cs",
-              "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\interfeices\\IGroupServices.cs",
-              "RelativeDocumentMoniker": "Services\\Services\\interfeices\\IGroupServices.cs",
-              "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Services\\Services\\interfeices\\IGroupServices.cs",
-              "RelativeToolTip": "Services\\Services\\interfeices\\IGroupServices.cs",
-              "ViewState": "AQIAAA8AAAAwMzMzMzM2wBMAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T09:23:25.412Z",
+              "WhenOpened": "2024-09-21T09:44:31.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Options.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Helpers\\Enums\\Options.cs",
               "RelativeDocumentMoniker": "Course\\Helpers\\Enums\\Options.cs",
               "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Helpers\\Enums\\Options.cs",
               "RelativeToolTip": "Course\\Helpers\\Enums\\Options.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T08:47:44.187Z"
+              "WhenOpened": "2024-09-21T14:31:56.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Program.cs",
               "RelativeDocumentMoniker": "Course\\Program.cs",
               "ToolTip": "C:\\Users\\Farid\\Desktop\\VS\\Course\\Course\\Program.cs",
               "RelativeToolTip": "Course\\Program.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAAD0AAAAWAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAF4AAAAhAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T19:06:28.578Z"
+              "WhenOpened": "2024-09-16T19:06:28.578Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -2,6 +2,7 @@
 using Repositories.Exceptions;
 using Repositories.Helpers.Constants;
 using Repositories.Repositories;
+using Repositories.Repositories.Data;
 using Repositories.Repositories.Interfeices;
 using Services.Services.interfeices;
 using System;
@@ -9,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Services.Services
 {
@@ -39,16 +41,14 @@ namespace Services.Services
             return studentRepositories.GetAll();
         }
 
-        public List<Group> GetAllStudentByAge(string name)
+        public List<Student> GetAllStudentByAge(int age)
+        {
+            return AppDbContext<Student>.datas.Where(m => m.Age == age).ToList() ?? throw new NotFoundexceptions(ExceptionMessages.NotFound);
+        }
+        public List<Student> GetAllStudentByGroupId(int id)
         {
             throw new NotImplementedException();
         }
-
-        public List<Group> GetAllStudentByGroupId(string room)
-        {
-            throw new NotImplementedException();
-        }
-
         public Student GetById(int id)
         {
             return studentRepositories.GetById(id);
