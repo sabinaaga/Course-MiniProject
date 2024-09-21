@@ -20,6 +20,8 @@ namespace Course.Helpers.Enums
         GetAllStudent,
         GetStudentsById,
         DeleteStudent,
-        GetAllStudentsByNameOrSurname
+        GetAllStudentsByNameOrSurname,
+        GetAllStudentByAge,
+        GetAllStudentByGroupId
     }
 }

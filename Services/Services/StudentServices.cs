@@ -47,7 +47,8 @@ namespace Services.Services
         }
         public List<Student> GetAllStudentByGroupId(int id)
         {
-            throw new NotImplementedException();
+            return AppDbContext<Student>.datas.Where(m => m.Id == id).ToList() ?? throw new NotFoundexceptions(ExceptionMessages.NotFound);
+
         }
         public Student GetById(int id)
         {

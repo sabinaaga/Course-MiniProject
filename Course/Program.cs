@@ -63,6 +63,12 @@ while (true)
             case (int)Options.GetAllStudentsByNameOrSurname:
                 studentController.SearchByNameOrSurname();
                 break;
+            case (int)Options.GetAllStudentByAge:
+                studentController.GetAllStudentByAge();
+                break;
+            case (int)Options.GetAllStudentByGroupId:
+                studentController.GetAllStudentByGroupId();
+                break;
             default:
                 ConsoleColor.Red.WriteConsole("Pleace select 1,2,3 or 4");
                 goto Options;
@@ -92,6 +98,6 @@ while (true)
 
 static void Menu()
 {
-    ConsoleColor.Cyan.WriteConsole("Please sellect one option: 1-Create 2-GetAll  3-Delete 4-GetById,5-SearchByName, 6-GetByNameGroup, 7-GetAllGroupByTeacherName, 8-GetAllGroupByRoom, 9-CreateStudent, 10-GetAllStudent, 11-GetStudentsById, 12-DeleteStudent, 13-GetAllStudentsByNameOrSurname");
+    ConsoleColor.Cyan.WriteConsole("Please sellect one option: 1-Create 2-GetAll  3-Delete 4-GetById,5-SearchByName, 6-GetByNameGroup, 7-GetAllGroupByTeacherName, 8-GetAllGroupByRoom, 9-CreateStudent, 10-GetAllStudent, 11-GetStudentsById, 12-DeleteStudent, 13-GetAllStudentsByNameOrSurname, 14-GetAllStudentByAge, 15-GetAllStudentByGroupId");
 
 }

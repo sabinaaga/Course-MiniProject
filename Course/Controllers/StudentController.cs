@@ -252,6 +252,38 @@ namespace Course.Controllers
             }
 
         }
+        public void GetAllStudentByGroupId()
+        {
+            ConsoleColor.Cyan.WriteConsole("Pleace add student group");
+        Group: string group = Console.ReadLine();
+            bool isCorrectAge = int.TryParse(group, out int studentGroup);
+            if (isCorrectAge)
+            {
+                try
+                {
+                    var result = studentServices.GetAllStudentByAge(studentGroup);
+                    foreach (var item in result)
+                    {
+                        string text = $"Id: {item.Id}, Name: {item.Name}, Surname: {item.Surname},Age: {item.Age}, Email: {item.Email}, Group: {item.Group} CreatDate: {item.CreatDate}";
+                        ConsoleColor.Cyan.WriteConsole(text);
+
+                    }
+
+
+                }
+                catch (Exception es)
+                {
+
+                    Console.WriteLine(es.Message);
+                }
+            }
+            else
+            {
+                ConsoleColor.Red.WriteConsole("Pleace add student group");
+                goto Group;
+
+            }
+        }
     }
     
 }
