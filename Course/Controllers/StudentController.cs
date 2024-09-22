@@ -1,5 +1,6 @@
 ﻿using Course.Helpers.Extensions;
 using Domain.Entityes;
+using Repositories.Exceptions;
 using Repositories.Helpers.Constants;
 using Services.Services;
 using Services.Services.interfeices;
@@ -38,7 +39,7 @@ namespace Course.Controllers
             var res = studentServices.GetAll();
             foreach (var item in res)
             {
-                string text = $"Id: {item.Id}, Name: {item.Name}, Surname: {item.Surname},Age: {item.Age}, Email: {item.Email}, Group: {item.Group} CreatDate: {item.CreatDate}";
+                string text = $"Id: {item.Id}, Name: {item.Name}, Surname: {item.Surname},Age: {item.Age}, Email: {item.Email}, Group: {item.Group.Name} CreatDate: {item.CreatDate}";
                 ConsoleColor.Cyan.WriteConsole(text);
             }
         }
@@ -137,86 +138,84 @@ namespace Course.Controllers
         {
             ConsoleColor.Cyan.WriteConsole("Add student name ");
         AddName: string strname = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(strname))
+            
+            if (string.IsNullOrWhiteSpace(strname))
             {
-                ConsoleColor.Cyan.WriteConsole("Add student surname ");
-            Surname: string surname = Console.ReadLine();
-                if (!string.IsNullOrWhiteSpace(surname))
-                {
-
-                    ConsoleColor.Cyan.WriteConsole("Add student age ");
-                Age: string age = Console.ReadLine();
-                    bool isCorrect = int.TryParse(age, out int studentAge);
-                    if (isCorrect)
-                    {
-                        ConsoleColor.Cyan.WriteConsole("Add student Email ");
-                        Email: string email= Console.ReadLine();
-                        if(!string.IsNullOrWhiteSpace(email))
-                        {
-                            ConsoleColor.Cyan.WriteConsole("Add student group ");
-
-                            var groups = _groupServices.GetAll();
-                            if (groups.Count == 0)
-                            {
-                                ConsoleColor.Yellow.WriteConsole("Data not added, pleace add data");
-                                _groupController.Create();
-
-
-
-                            }
-                            var res = _groupServices.GetAll();
-                            foreach (var item in res)
-                            {
-                                string text = $"Id: {item.Id}, Room: {item.Room}, Teacher: {item.Teacher}, CreatDate: {item.CreatDate}";
-                                ConsoleColor.Cyan.WriteConsole(text);
-                                ConsoleColor.Cyan.WriteConsole("Add student group Id ");
-                                Groups: string groupId=Console.ReadLine();
-                                bool isCorrects=int.TryParse(groupId, out int studentGroupId);
-                                if(isCorrects)
-                                {
-                                    _groupServices.GetById(studentGroupId);
-                                    studentServices.Create(new Student { Name = strname, Surname = surname, Age = studentAge, Email = email, Group = studentGroupId });
-                                    ConsoleColor.Green.WriteConsole(ValidationMessage.CreateSuccess);
-
-
-
-                                }
-                                else
-                                {
-                                    ConsoleColor.Red.WriteConsole("Add group Id Again");
-                                    goto Groups;
-
-                                }
-                            }
-                        
-
-                        }
-                        else
-                        {
-                            ConsoleColor.Red.WriteConsole("Add student Email ");
-                            goto Email;
-
-                        }
-
-                    }
-                    else
-                    {
-                        ConsoleColor.Red.WriteConsole("Add student age ");
-                        goto Age;
-
-                    }
-                }
-                else
-                {
-                    ConsoleColor.Red.WriteConsole("Add student surname ");
-                    goto Surname;
-                }
-            }
-            else
-            {
-                ConsoleColor.Red.WriteConsole("Add student name ");
+                ConsoleColor.Red.WriteConsole("Add student surname ");
                 goto AddName;
             }
+            ConsoleColor.Cyan.WriteConsole("Add student surname ");
+        Surname: string surname = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(surname))
+            {
+
+                ConsoleColor.Red.WriteConsole("Add student surname ");
+                goto Surname;
+            }
+           
+            ConsoleColor.Cyan.WriteConsole("Add student age ");
+        Age: string age = Console.ReadLine();
+            bool isCorrect = int.TryParse(age, out int studentAge);
+            if (!isCorrect)
+            {
+                ConsoleColor.Red.WriteConsole("Add student age ");
+                goto Age;
+
+            }
+            ConsoleColor.Cyan.WriteConsole("Add student Email ");
+        Email: string email = Console.ReadLine().Trim();
+            if (string.IsNullOrEmpty(email)||!email.Any(e=>e=='@'))
+
+            {
+
+                ConsoleColor.Red.WriteConsole("Add student Email ");
+                goto Email;
+
+            }
+            ConsoleColor.Cyan.WriteConsole("Add student group ");
+
+            var groups = _groupServices.GetAll();
+            if (groups.Count == 0)
+            {
+                ConsoleColor.Yellow.WriteConsole("Data not added, pleace add data");
+                return;
+
+
+
+            }
+            foreach (var item in groups)
+            {
+                string text = $"Id: {item.Id},Namee:{item.Name} Room: {item.Room}, Teacher: {item.Teacher}, CreatDate: {item.CreatDate}";
+                ConsoleColor.Cyan.WriteConsole(text);
+                ConsoleColor.Cyan.WriteConsole("Add student group Id ");
+           
+            }
+        Groups: string groupId = Console.ReadLine();
+            bool isCorrects = int.TryParse(groupId, out int studentGroupId);
+            if (!isCorrects)
+            {
+
+                ConsoleColor.Red.WriteConsole("Add group Id Again");
+                goto Groups;
+
+            }
+            try
+            {
+                Group group = _groupServices.GetById(studentGroupId);
+                if (group == null)
+                {
+                    ConsoleColor.Red.WriteConsole("Group does not exist");
+                    goto Groups;
+                }
+                studentServices.Create(new Student { Name = strname, Surname = surname, Age = studentAge, Email = email, Group = group });
+                ConsoleColor.Green.WriteConsole(ValidationMessage.CreateSuccess);
+            }
+            catch(NotFoundexceptions ex)
+            {
+                ConsoleColor.Red.WriteConsole(ex.Message);
+                goto Groups;
+            }
+            //NotFoundexceptions
         }
 
         public void GetAllStudentByAge()

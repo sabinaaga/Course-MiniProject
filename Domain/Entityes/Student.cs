@@ -14,6 +14,6 @@ namespace Domain.Entityes
         public int Age { get; set; }
         public string Email { get; set; }
 
-        public int Group { get; set; }
+        public Group Group { get; set; }
     }
 }
